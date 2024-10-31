@@ -65,3 +65,36 @@ body {
 .footer span a {
   color: #42047e;
 }
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h2 {
+  font-size: 22px;
+  cursor: pointer;
+}
+.header span {
+  padding: 7px 11px;
+  background-color: #42047e;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.container button {
+  padding: 7px 11px;
+  background-color: #42047e;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
