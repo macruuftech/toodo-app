@@ -130,3 +130,60 @@ body {
   cursor: pointer;
   background-color: #fa00000f;
 }
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal.active {
+  display: flex;
+}
+.modal .modal-content {
+  width: 460px;
+  background-color: #fff;
+  padding: 14px;
+  border-radius: 5px;
+}
+.m-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.m-header h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.m-header i {
+  font-size: 20px;
+  cursor: pointer;
+}
+.m-body {
+  width: 100%;
+  padding-top: 20px;
+}
+.m-body .form-col {
+  padding-top: 10px;
+}
+.m-footer {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 6px;
+}
+.m-footer button {
+  padding: 7px 11px;
+  background-color: #42047e;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
