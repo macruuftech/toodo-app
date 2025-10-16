@@ -187,3 +187,6 @@ body {
   cursor: pointer;
   border: none;
 }
+.d-none {
+  display: none;
+}

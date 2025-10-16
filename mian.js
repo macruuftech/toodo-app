@@ -71,6 +71,7 @@ const getAllTodos = () => {
           <div class="box-footer">
             <i class="fa-solid fa-trash"></i>
           </div>
+          <div class="d-none">${todo.id}</div>
         </div>
     `;
   });
@@ -79,3 +80,14 @@ const getAllTodos = () => {
 };
 
 getAllTodos();
+
+box.addEventListener("click", (e) => {
+  if (e.target.classList.contains("fa-trash")) {
+    let id =
+      e.target.parentElement.parentElement.querySelector(".d-none").innerText;
+    let todos = JSON.parse(localStorage.getItem("todos")) || [];
+    let newTodos = todos.filter((el) => el.id != id);
+    localStorage.setItem("todos", JSON.stringify(newTodos));
+    getAllTodos();
+  }
+});
